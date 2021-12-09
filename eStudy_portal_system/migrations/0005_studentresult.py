@@ -7,7 +7,7 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('student_management_app', '0004_auto_20200703_0740'),
+        ('eStudy_portal_system', '0004_auto_20200703_0740'),
     ]
 
     operations = [
@@ -19,8 +19,8 @@ class Migration(migrations.Migration):
                 ('subject_assignment_marks', models.FloatField(default=0)),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
                 ('updated_at', models.DateTimeField(auto_now=True)),
-                ('student_id', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='student_management_app.Students')),
-                ('subject_id', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='student_management_app.Subjects')),
+                ('student_id', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='eStudy_portal_system.Students')),
+                ('subject_id', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='eStudy_portal_system.Subjects')),
             ],
         ),
     ]
