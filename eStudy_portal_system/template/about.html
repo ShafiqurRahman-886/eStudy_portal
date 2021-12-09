@@ -1,0 +1,239 @@
+{% extends 'frontendbase.html' %}
+{% load static %} 
+
+{% block content %}
+
+<body>
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-inverse navbar-fixed-top headroom" >
+    <div class="container">
+      <div class="navbar-header">
+        <!-- Button for smallest screens -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="#"><img src="{% static 'assets/images/logo.png'  %}" alt="Stusent Management System"></a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav pull-right">
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li class="active"><a href="{% url 'about' %}">About Us</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+          <li><a class="btn" href="{% url 'login' %}">Login</a></li>
+
+          <!-- <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">More Pages <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="sidebar-left.html">Left Sidebar</a></li>
+              <li><a href="sidebar-right.html">Right Sidebar</a></li>
+            </ul>
+          </li> -->
+
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div> 
+  <!-- /.navbar -->
+
+  <header id="head" class="secondary"></header>
+
+  <!-- container -->
+  <div class="container">
+
+    <ol class="breadcrumb">
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li class="active">About</li>
+    </ol>
+
+    <div class="row">
+      
+      <!-- Article main content -->
+      <article class="col-sm-12 maincontent">
+        <header class="page-header">
+          <h1 class="page-title">About us</h1>
+        </header>
+        
+        <p><img src="assets/images/mac.jpg" alt="" class="img-rounded pull-right" width="300" > Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, consequuntur eius repellendus eos aliquid molestiae ea laborum ex quibusdam laudantium voluptates placeat consectetur quam aliquam beatae soluta accusantium iusto nihil nesciunt unde veniam magnam repudiandae sapiente.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, consequuntur eius repellendus eos aliquid molestiae ea laborum ex quibusdam laudantium voluptates placeat consectetur quam aliquam beatae soluta accusantium iusto nihil nesciunt unde veniam magnam repudiandae sapiente.</p>
+       
+	   <div class="row about_blk">
+	   <div class="col-sm-6">
+	   <img src="{% static 'assets/images/case-detail-img-01.jpg'  %}" alt="" >
+	   <h2>30 YEARS OF EXPERIENCE</h2>
+	   Morem Ipsum is simply dummy text of the printing and pepesetting found. Morem Ipsum is simply dummy text of the printing and pepesetting found.
+	   </div>
+	   
+	    <div class="col-sm-6">
+		<h4>Explore to find your perfect program</h4>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, consequuntur eius repellendus eos aliquid molestiae ea laborum ex quibusdam laudantium voluptates placeat consectetur quam aliquam beatae soluta accusantium iusto nihil nesciunt unde veniam magnam repudiandae sapiente.</p>
+		
+		<ul class="ab-links">
+		<li>
+		 <i class="bi bi-laptop"></i><h4>Warranty Management</h4>
+		 Morem Ipsum is simply dummy text of the printing and pepesetting found. Morem Ipsum is simply dummy text of the printing and pepesetting found.
+		</li>
+		<li>
+		 <h4>Warranty Management</h4>
+		 Morem Ipsum is simply dummy text of the printing and pepesetting found. Morem Ipsum is simply dummy text of the printing and pepesetting found.
+		</li>
+		<li>
+		 <h4>Warranty Management</h4>
+		 Morem Ipsum is simply dummy text of the printing and pepesetting found. Morem Ipsum is simply dummy text of the printing and pepesetting found.
+		</li>
+		</ul>
+		
+		</div>
+	   </div>
+        
+      </article>
+	  
+	  <div class="container">
+	   <div class="row">
+	  <h2 class="text-center top-space">Meet Our Featured Instructors</h2>
+		<p style="text-align:center;">Cum doctus civibus efficiantur in imperdiet deterruisset.
+		
+		<div class="team-blk">
+		<div class="col-sm-3">
+		   <img src="{% static 'assets/images/teach2.jpg'  %}" alt="" >
+		   <h2>David Lee</h2>
+		   Web Developer
+		</div>
+		<div class="col-sm-3">
+		   <img src="{% static 'assets/images/teach2.jpg'  %}" alt="" >
+		   <h2>David Lee</h2>
+Web Developer		   
+		</div>
+		<div class="col-sm-3">
+		   <img src="{% static 'assets/images/teach2.jpg'  %}" alt="" >
+		   <h2>David Lee</h2>	
+Web Developer		   
+		</div>
+		<div class="col-sm-3">
+		   <img src="{% static 'assets/images/teach2.jpg'  %}" alt="" >
+		   <h2>David Lee</h2>	
+Web Developer		   
+		</div>
+		</div>
+		
+		
+		</div>
+	   </div>
+	   
+	    </div>
+  </div>  <!-- /container -->
+	   
+	   <div class="container-fluid ab_last">
+	   <div class="container">
+	   <div class="row">
+	   
+	   <div class="new-sec">
+	   <h1>
+Let’s Create the Next Big Thing Together</h1>
+<button type="button" class="btn btn-primary ls-btn">Get Started</button>
+
+	   </div>
+	      </div>
+	   
+	   </div></div>
+	  
+      <!-- /Article -->
+      
+      <!-- Sidebar -->
+    <!--  <aside class="col-sm-4 sidebar sidebar-right">
+
+        <div class="widget">
+          <h4>Vacancies</h4>
+          <ul class="list-unstyled list-spaces">
+            <li><a href="">Lorem ipsum dolor</a><br><span class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, laborum.</span></li>
+            <li><a href="">Totam, libero, quis</a><br><span class="small text-muted">Suscipit veniam debitis sed ipsam quia magnam eveniet perferendis nisi.</span></li>
+            <li><a href="">Enim, sequi dignissimos</a><br><span class="small text-muted">Reprehenderit illum quod unde quo vero ab inventore alias veritatis.</span></li>
+            <li><a href="">Suscipit, consequatur, aut</a><br><span class="small text-muted">Sed, mollitia earum debitis est itaque esse reiciendis amet cupiditate.</span></li>
+            <li><a href="">Nam, illo, veritatis</a><br><span class="small text-muted">Delectus, sapiente illo provident quo aliquam nihil beatae dignissimos itaque.</span></li>
+          </ul>
+        </div>
+
+      </aside>-->
+      <!-- /Sidebar -->
+
+   
+
+  <footer id="footer">
+
+    <div class="footer1">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-md-3 widget">
+            <a class="navbar-brand" href="#"><img src="{% static 'assets/images/logo.png'  %}" alt="Stusent Management System"></a>
+            <div class="widget-body">
+              <p>+918580720272<br>
+                <a href="mailto:#">shafiqur@gmail.com</a><br>
+                <br>
+                Ind. area phase 8, Mohali, PB 160072
+              </p>  
+            </div>
+          </div>
+
+          <div class="col-md-3 widget">
+            <h3 class="widget-title">Quick Links</h3>
+            <div class="widget-body">
+            
+			  
+	<ul class="links">		  
+<li>Popular Courses</li>
+<li>Examples</li>
+<li>Features</li>
+<li>Pricing</li>
+<li>Login</li>
+	</ul>		  
+            </div>
+          </div>
+		  
+		  <div class="col-md-3 widget">
+		 <h3 class="widget-title"> Do You Need Help With Anything?</h3>
+		 <div class="widget-body">
+		 Receive updates, hot deals, tutorials, discounts sent straignt in your inbox every month
+
+
+		 </div>
+		  </div>
+
+          <div class="col-md-3 widget">
+           
+            <div class="widget-body foo-logo">
+              <img src="{% static 'assets/images/appstore.png'  %}" alt="Stusent Management System">
+			  <br>
+			  <img src="{% static 'assets/images/googleplay.png'  %}" alt="Stusent Management System">
+            </div>
+          </div>
+
+        </div> <!-- /row of widgets -->
+      </div>
+    </div>
+
+    <div class="footer2">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-md-6 widget">
+            <div class="widget-body">
+              <p class="simplenav">
+                <a href="{% url 'home' %}">Home</a> | 
+                <a href="{% url 'about' %}">About</a> |
+                <a href="{% url 'contact' %}">Contact</a> |
+                <a href="{% url 'login' %}">Login</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 widget">
+            <div class="widget-body">
+              <p class="text-right">
+                Copyright &copy; {% now "Y" %}, Shafiqur Rahman. 
+              </p>
+            </div>
+          </div>
+
+        </div> <!-- /row of widgets -->
+      </div>
+    </div>
+  </footer>
+
+{% endblock %}
